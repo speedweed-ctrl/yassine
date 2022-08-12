@@ -8,8 +8,8 @@ import c from '../components/4.jpg'
 import d from '../components/5.jpg'
 const Main = () => {
   return (
-    <Grid container direction='column' spacing={1}>
-      <Grid item >
+    <Grid container direction='column' spacing={1} sx={{position:'relative',bottom:'10rem',zIndex:'-1'}}>
+      <Grid item sx={{paddingBottom:'-5rem'}} >
         <Opener/>
       </Grid>
       <Grid item>

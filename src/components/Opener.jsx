@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 const Opener = () => {
   return (
-      <div style={{height:''}}>
+      <div style={{position:'relative',top:'10.3rem'}}>
         <img style={{height:'35rem',width:'100%',filter:"blur(2px)"}} src={a} alt="" />
           <div style={{  position:'relative' ,bottom:'27rem' , left:'3rem', }}>
           <Typography variant="h3" gutterBottom component="div" color='white' >

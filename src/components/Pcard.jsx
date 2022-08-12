@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import a from './avatar.jpg'
+import a from './m.jpg'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import CallIcon from '@mui/icons-material/Call';
 const ExpandMore = styled((props) => {
@@ -34,20 +34,16 @@ export default function Pcard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 , marginTop:'2rem' }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
+        
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
           </IconButton>
         }
-        title="specialist name"
-        subheader="September 14, 2016"
+        title="maison la  coeur"
+        subheader=" 42 Rue Mendes France"
       />
       <CardMedia
         component="img"
@@ -78,17 +74,17 @@ export default function Pcard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>intodruction:</Typography>
+          <Typography paragraph>desciption:</Typography>
           <Typography paragraph>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aliquam, natus deserunt optio autem quisquam impedit amet sunt accusantium et tempora voluptate aut,
           </Typography>
-          <Typography paragraph>backround:</Typography>
+          <Typography paragraph>offered programs:</Typography>
 
           <Typography paragraph>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nesciunt aliquid vitae sunt. Ducimus incidunt inventore quia, voluptatum enim rerum omnis sapiente, quidem ipsa recusandae quibusdam distinctio, suscipit dolores.           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nesciunt aliquid vitae sunt. Ducimus incidunt inventore quia, voluptatum enim rerum omnis sapiente, quidem ipsa recusandae quibusdam distinctio, suscipit dolores.
 
           </Typography>
-          <Typography paragraph>a word from the team :</Typography>
+          <Typography paragraph>the team review :</Typography>
           <Typography paragraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto modi saepe aperiam mollitia eum molestias nemo quod corporis nostrum unde, quisquam aspernatur, dignissimos inventore, ut amet eius voluptas quia.
           </Typography>

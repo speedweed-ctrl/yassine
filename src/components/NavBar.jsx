@@ -12,8 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Link } from 'react-router-dom';
 const pages = ['speciaists', 'guest houses'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,8 +37,8 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{}}>
-      <Container maxWidth="xl">
+    <AppBar position="static" sx={{width:'100%'}}>
+      <Container maxWidth="xxl" sx={{backgroundColor:'#1ebbd7',marginTop:'-0.5rem',width:'100%'}}>
         <Toolbar disableGutters>
           <FavoriteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} />
           <Typography
@@ -86,11 +88,17 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <Link to='spec' style={{textDecoration:'none' , color:'black'}}>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">specialists</Typography>
                 </MenuItem>
-              ))}
+                </Link>
+                <Link to='hs' style={{textDecoration:'none',color:'black'}}>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">guest houses</Typography>
+                </MenuItem>
+                </Link>
+            
             </Menu>
           </Box>
           <FavoriteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -114,15 +122,24 @@ const NavBar = () => {
 
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            <Link to='spec' style={{textDecoration:'none'}}>
               <Button
-                key={page}
+                
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                Specialists
               </Button>
-            ))}
+              </Link>
+              <Link to='hs' style={{textDecoration:'none'}}>
+              <Button
+                
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Guest houses
+              </Button>
+              </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
