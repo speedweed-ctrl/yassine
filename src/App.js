@@ -6,6 +6,7 @@ import Houses from "./pages/Houses";
 import Main from "./pages/Main";
 import Specialists from "./pages/Specialists";
 import {  Routes,Route } from 'react-router-dom'
+import Filter from "./components/Filter";
 
 
 function App() {
