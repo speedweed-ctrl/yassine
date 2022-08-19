@@ -12,23 +12,19 @@ const Main = () => {
       <Grid item sx={{paddingBottom:'-5rem'}} >
         <Opener/>
       </Grid>
-      <Grid item>
+      <Grid item sx={{marginTop:'-5rem'}}>
         <Grid container sx={{width:'100%'}}   >
-          <Grid item sx={{backgroundColor:'#63DF92',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
+          <Grid item sx={{backgroundColor:'#217657',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
           <Typography variant="h3" gutterBottom component="div" color='white' sx={{paddingTop:'2rem'}} >
-            Who are we
+          Qui Sommes Nous
 
             </Typography><br></br><br></br>
-            <Typography variant="subtitle1" gutterBottom component="div" color='white'>
-            Esse et veniam est duis nisi officia voluptate id aliquip. Nisi eu nulla ullamco velit laborum incididunt enim amet id. Veniam labore duis aute eiusmod.
-
-            Ullamco ut elit aute labore quis Lorem proident pariatur sunt anim. Aliqua dolor qui sint est est elit voluptate. Ut commodo ut qui proident esse cupidatat tempor nisi eiusmod aliqua pariatur. Nostrud occaecat aliquip ipsum id officia ex deserunt culpa adipisicing nulla duis eu in. Minim mollit pariatur nostrud sit nisi dolore.
-
-            Incididunt minim aliqua elit labore incididunt ex ullamco nisi esse. Veniam labore cillum Lorem amet id duis consectetur cillum aliquip. Sunt dolore nulla occaecat tempor aute ex aliqua qui consectetur labore est sint ut ad. Nostrud nulla non duis quis minim veniam irure reprehenderit enim labore qui labore.
-            </Typography>
+            <Typography variant="subtitle1" gutterBottom component="div" color='white' sx={{fontSize:'1.2rem'}}>
+             La Famille du coeur est une Fondation engager dans le marche du tourisme de bien etre qui  cible les individue est les entreprise
+             </Typography>
           </Grid>
           <Grid item sx={{width:'30%',height:'25rem'}}>
-              <img src={a} style={{height:'100%',width:'100%'}}></img>
+              <img src={a} alt="aa" style={{height:'100%',width:'100%'}}></img>
           </Grid>
       </Grid>
       </Grid>
@@ -36,58 +32,53 @@ const Main = () => {
       <Grid container sx={{width:'100%'}} direction='row-reverse'  >
           <Grid item sx={{backgroundColor:'#1ebbd7',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
           <Typography variant="h3" gutterBottom component="div" color='white' sx={{paddingTop:'2rem'}} >
-            Our Mission
+            Notre Mission
 
             </Typography><br></br><br></br>
-            <Typography variant="subtitle1" gutterBottom component="div" color='white'>
-            Esse et veniam est duis nisi officia voluptate id aliquip. Nisi eu nulla ullamco velit laborum incididunt enim amet id. Veniam labore duis aute eiusmod.
-
-            Ullamco ut elit aute labore quis Lorem proident pariatur sunt anim. Aliqua dolor qui sint est est elit voluptate. Ut commodo ut qui proident esse cupidatat tempor nisi eiusmod aliqua pariatur. Nostrud occaecat aliquip ipsum id officia ex deserunt culpa adipisicing nulla duis eu in. Minim mollit pariatur nostrud sit nisi dolore.
-
-            Incididunt minim aliqua elit labore incididunt ex ullamco nisi esse. Veniam labore cillum Lorem amet id duis consectetur cillum aliquip. Sunt dolore nulla occaecat tempor aute ex aliqua qui consectetur labore est sint ut ad. Nostrud nulla non duis quis minim veniam irure reprehenderit enim labore qui labore.
+            <Typography variant="subtitle1" gutterBottom component="div" color='white' sx={{fontSize:'1.2rem'}}>
+            <span>
+              La Famille du coeur  prend en charge le Bien etre des ses clientele quelle que soit les individue
+              ou les entreprise pour </span><br></br> relver le stress est prevenir les 'burn out'
             </Typography>
           </Grid>
           <Grid item sx={{width:'30%',height:'25rem'}}>
-              <img src={b} style={{height:'100%',width:'100%'}}></img>
+              <img src={b} alt="aa"  style={{height:'100%',width:'100%'}}></img>
           </Grid>
       </Grid>
       </Grid>
       <Grid item>
         <Grid container sx={{width:'100%'}}   >
-          <Grid item sx={{backgroundColor:'#63DF92',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
+          <Grid item sx={{backgroundColor:'#217657',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
           <Typography variant="h3" gutterBottom component="div" color='white' sx={{paddingTop:'2rem'}} >
-            Our goals
+            Note Objectif
 
             </Typography><br></br><br></br>
-            <Typography variant="subtitle1" gutterBottom component="div" color='white'>
-            Esse et veniam est duis nisi officia voluptate id aliquip. Nisi eu nulla ullamco velit laborum incididunt enim amet id. Veniam labore duis aute eiusmod.
-
-            Ullamco ut elit aute labore quis Lorem proident pariatur sunt anim. Aliqua dolor qui sint est est elit voluptate. Ut commodo ut qui proident esse cupidatat tempor nisi eiusmod aliqua pariatur. Nostrud occaecat aliquip ipsum id officia ex deserunt culpa adipisicing nulla duis eu in. Minim mollit pariatur nostrud sit nisi dolore.
-
-            Incididunt minim aliqua elit labore incididunt ex ullamco nisi esse. Veniam labore cillum Lorem amet id duis consectetur cillum aliquip. Sunt dolore nulla occaecat tempor aute ex aliqua qui consectetur labore est sint ut ad. Nostrud nulla non duis quis minim veniam irure reprehenderit enim labore qui labore.
+            <Typography variant="subtitle1" gutterBottom component="div" color='white' sx={{fontSize:'1.2rem'}}>
+            <span>
+              La Famille du coeur  vise à améliorer la visibilite du domain du tourisme de bien etre ,
+              améliorer la connaissance du pratique du bien etre holistique</span><br></br> et de cree des service personnalisés pour sa clientele
             </Typography>
           </Grid>
           <Grid item sx={{width:'30%',height:'25rem'}}>
-              <img src={c} style={{height:'100%',width:'100%'}}></img>
+              <img src={c} alt="aa" style={{height:'100%',width:'100%'}}></img>
           </Grid>
       </Grid>
       </Grid>
-      <Grid item>
+      <Grid item sx={{marginBottom:'-15rem'}}>
       <Grid container sx={{width:'100%'}} direction='row-reverse'  >
           <Grid item sx={{backgroundColor:'#1ebbd7',width:'70%',height:'25rem' , paddingLeft:'1.5rem'}}>
-          <Typography variant="h3" gutterBottom component="div" color='white' sx={{paddingTop:'2rem'}} >
-              A word from our partners
+          <Typography variant="h3" gutterBottom component="div" color='white' sx={{paddingTop:'2rem'}}  >
+              Les Partenariat
             </Typography><br></br><br></br>
-            <Typography variant="subtitle1" gutterBottom component="div" color='white'>
-            Esse et veniam est duis nisi officia voluptate id aliquip. Nisi eu nulla ullamco velit laborum incididunt enim amet id. Veniam labore duis aute eiusmod.
-
-            Ullamco ut elit aute labore quis Lorem proident pariatur sunt anim. Aliqua dolor qui sint est est elit voluptate. Ut commodo ut qui proident esse cupidatat tempor nisi eiusmod aliqua pariatur. Nostrud occaecat aliquip ipsum id officia ex deserunt culpa adipisicing nulla duis eu in. Minim mollit pariatur nostrud sit nisi dolore.
-
-            Incididunt minim aliqua elit labore incididunt ex ullamco nisi esse. Veniam labore cillum Lorem amet id duis consectetur cillum aliquip. Sunt dolore nulla occaecat tempor aute ex aliqua qui consectetur labore est sint ut ad. Nostrud nulla non duis quis minim veniam irure reprehenderit enim labore qui labore.
+            <Typography variant="subtitle1" gutterBottom component="div" color='white' sx={{fontSize:'1.2rem'}}>
+            <span>
+              A fin de parvenir d'achevé notre mission on a fait des partenariat avec des centre de formation comme "centre fleur de lotus " et " AHLA " , est ausi avec des resort touristique come "Yorenka Tasorentsi
+Amazonie"
+              </span><br></br> 
             </Typography>
           </Grid>
           <Grid item sx={{width:'30%',height:'25rem'}}>
-              <img src={d} style={{height:'100%',width:'100%'}}></img>
+              <img src={d} alt="aa" style={{height:'100%',width:'100%'}}></img>
           </Grid>
       </Grid>
       </Grid>

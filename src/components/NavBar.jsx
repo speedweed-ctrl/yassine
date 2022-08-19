@@ -7,13 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link } from 'react-router-dom';
-const pages = ['speciaists', 'guest houses'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
@@ -37,10 +35,10 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{width:'100%'}}>
-      <Container maxWidth="xxl" sx={{backgroundColor:'#1ebbd7',marginTop:'-0.5rem',width:'100%'}}>
+    <AppBar position="static" sx={{width:'101%'}}>
+      <Container maxWidth="xxl" sx={{backgroundColor:'#217675',marginTop:'-0.5rem',width:'100%'}}>
         <Toolbar disableGutters>
-          <FavoriteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} />
+          <FavoriteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 , color:'#F1A629', }} />
           <Typography
             variant="h6"
             noWrap
@@ -52,8 +50,8 @@ const NavBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
+              color:'#F1A629',
             }}
           >
             Famille du coeur
@@ -98,10 +96,20 @@ const NavBar = () => {
                   <Typography textAlign="center">guest houses</Typography>
                 </MenuItem>
                 </Link>
+                <Link to='en' style={{textDecoration:'none' , color:'black'}}>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">les enterprise</Typography>
+                </MenuItem>
+                </Link>
+                <Link to='pn' style={{textDecoration:'none' , color:'black'}}>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">les partenaire</Typography>
+                </MenuItem>
+                </Link>
             
             </Menu>
           </Box>
-          <FavoriteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <FavoriteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 ,color:'#F1A629',}} />
           <Typography
             variant="h5"
             noWrap
@@ -114,19 +122,19 @@ const NavBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
+              color:'#F1A629',
             }}
           >
              Famille du coeur
 
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Link to='spec' style={{textDecoration:'none'}}>
+            <Link to='spec' style={{textDecoration:'none',}}>
               <Button
                 
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block',"&:hover":{color:'#F1A629',} }}
               >
                 Specialists
               </Button>
@@ -135,9 +143,27 @@ const NavBar = () => {
               <Button
                 
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block',"&:hover":{color:'#F1A629',} }}
               >
                 Guest houses
+              </Button>
+              </Link>
+              <Link to='en' style={{textDecoration:'none'}}>
+              <Button
+                
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block',"&:hover":{color:'#F1A629',} }}
+              >
+                les entreprise
+              </Button>
+              </Link>
+              <Link to='pn' style={{textDecoration:'none'}}>
+              <Button
+                
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block',"&:hover":{color:'#F1A629',} }}
+              >
+                les partenaire
               </Button>
               </Link>
           </Box>

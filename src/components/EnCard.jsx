@@ -10,22 +10,23 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import a from './m.jpg'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import CallIcon from '@mui/icons-material/Call';
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
-export default function Pcard() {
-  const [expanded, setExpanded] = React.useState(false);
+const ExpandMore = styled((props) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+  })(({ theme, expand }) => ({
+    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  }));
+  
+const EnCard = ({props}) => {
+ 
+    const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -40,18 +41,18 @@ export default function Pcard() {
             <MoreVertIcon sx={{color:'#217657'}} />
           </IconButton>
         }
-        title="maison la  coeur"
-        subheader=" 42 Rue Mendes France"
+        title={props.name}
+        subheader=" lorem ipsum"
       />
       <CardMedia
         component="img"
-        height="194"
-        image={a}
+        height="250"
+        image={props.img}
         alt="some guy"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aliquam, natus deserunt optio autem quisquam impedit amet sunt accusantium et tempora voluptate aut, fugiat, deleniti fuga eveniet! Earum, laudantium ullam?
+            {props.description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -59,7 +60,7 @@ export default function Pcard() {
           <AddCircleIcon  sx={{color:'#217657'}}/>
         </IconButton>
         <IconButton aria-label="share">
-          <CallIcon sx={{color:'#217657'}} />
+          <BookmarkIcon sx={{color:'#217657'}} />
         </IconButton>
         <ExpandMore
           expand={expanded}
@@ -73,17 +74,17 @@ export default function Pcard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>desciption:</Typography>
+          <Typography paragraph variant='h5'>desciption:</Typography>
           <Typography paragraph>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aliquam, natus deserunt optio autem quisquam impedit amet sunt accusantium et tempora voluptate aut,
           </Typography>
-          <Typography paragraph>offered programs:</Typography>
+          <Typography paragraph variant='h5'>contenue du pack :</Typography>
 
           <Typography paragraph>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nesciunt aliquid vitae sunt. Ducimus incidunt inventore quia, voluptatum enim rerum omnis sapiente, quidem ipsa recusandae quibusdam distinctio, suscipit dolores.           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nesciunt aliquid vitae sunt. Ducimus incidunt inventore quia, voluptatum enim rerum omnis sapiente, quidem ipsa recusandae quibusdam distinctio, suscipit dolores.
 
           </Typography>
-          <Typography paragraph>the team review :</Typography>
+          <Typography paragraph variant='h5'>témoignages :</Typography>
           <Typography paragraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto modi saepe aperiam mollitia eum molestias nemo quod corporis nostrum unde, quisquam aspernatur, dignissimos inventore, ut amet eius voluptas quia.
           </Typography>
@@ -92,3 +93,5 @@ export default function Pcard() {
     </Card>
   );
 }
+
+export default EnCard

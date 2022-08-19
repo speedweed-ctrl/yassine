@@ -14,7 +14,7 @@ import Divider from '@mui/material/Divider';
 
 
 
-const Filter = ({props}) => {
+const Filter2 = ({props}) => {
     const [spec,setSpec]=useState('')
     const [reg,setReg]=useState('')
 
@@ -26,26 +26,25 @@ const Filter = ({props}) => {
     }
     const sp=[
         {
-            value:'liberaton emotionelle',
+            value:'lorem',
             name:'Arian',
 
         },
         {
-            value:'life coach',
+            value:'lorem',
             name:'sousse',
             
         },
         {
-            value:'chromatic healer',
+            value:'lorem',
             name:'La marsa',
             
         },
        
     ]
     const list= [
-        { label: 'Ahmed BEN RAHAL', id: 1 },
-        { label: 'Rim Khalbous ', id: 2 },
-        { label: 'Selim Aroua', id: 3 },
+        { label: 'maison la coeur', id: 1 },
+        
        
     ]
 
@@ -69,9 +68,9 @@ const Filter = ({props}) => {
             <Grid item>
             <Box sx={{ minWidth: '12rem' }}>
                 <FormControl fullWidth>
-                    <InputLabel >specialite</InputLabel>
+                    <InputLabel >type</InputLabel>
                     <Select
-                    label="specialite"
+                    label="type"
                     value={spec}
                     onChange={handleChnage}
                     >
@@ -116,4 +115,4 @@ const Filter = ({props}) => {
   )
 }
 
-export default Filter
+export default Filter2

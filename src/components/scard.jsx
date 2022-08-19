@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import av from './avatar.jpg'
+
 
 export default function Scard({props}) {
   return (
@@ -13,13 +13,11 @@ export default function Scard({props}) {
         <CardMedia
           component="img"
           height="320"
-          image={av}
-          
-          
+          image={props.img}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.Name}
+            {props.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
            {props.Des}
@@ -27,8 +25,8 @@ export default function Scard({props}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" sx={{color:'#1ebbd7'}}>
-         see full profile
+        <Button size="small" sx={{color:'#217657'}}>
+         {props.inf}
         </Button>
       </CardActions>
     </Card>

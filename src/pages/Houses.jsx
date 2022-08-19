@@ -2,13 +2,13 @@ import React from 'react'
 import Grid  from '@material-ui/core/Grid'
 import  {spec}  from './spec'
 import Pcard from '../components/Pcard'
-import Filter from '../components/Filter'
+import Filter2 from '../components/Filter2'
 
 const Houses = () => {
   return (
     <>
-    <Filter></Filter>
-    <Grid container spacing={4} lg={12} xl={12} md={12} sm={12} xs={12}>
+    <Filter2></Filter2>
+   <Grid container spacing={5} lg={12} xl={12} md={12} sm={12} xs={12} >
         {spec.map((sp=>{
             return(
             <Grid item >
